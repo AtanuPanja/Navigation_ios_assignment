@@ -9,8 +9,8 @@ import UIKit
 
 class FirstScreenViewController: UIViewController {
 
+    // IBOutlet setup for accessing the input data in the text fields
     @IBOutlet weak var firstNumberTextField: UITextField!
-    
     @IBOutlet weak var secondNumberTextField: UITextField!
     
     
@@ -28,7 +28,7 @@ class FirstScreenViewController: UIViewController {
     }
     
 
-    // defining a method continueWasTapped, which runs when the button continue is pressed
+    // defining an IBAction method continueWasTapped, which runs when the button continue is pressed
     // If the textfield inputs are strings, or are empty, then the next screen shows Result: 0
     // Else if the textfield has numbers (integer or decimal), the multiplication result is shown in the next screen
     // the secondScreenViewController has a variable result, which is assigned here with the product of the two numbers
